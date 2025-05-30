@@ -1,0 +1,10 @@
+*.synctex.gz
+*.tex
+*.bib
+*.bbl
+*.png
+
+
+
+__pycache__/
+.DS_Store   # macOS metadata
