@@ -24,13 +24,34 @@
 \setlength\parskip{2pt}
 
 %  Theorem environments
-\theoremstyle{plain} 
+
+\newtheoremstyle{plainbreak}
+  {\topsep}   % Space above
+  {\topsep}   % Space below
+  {\itshape}  % Body font
+  {}          % Indent amount
+  {\bfseries} % Theorem head font
+  {}         % Punctuation after theorem head
+  {\newline}       % space after head (no \newline!)
+  {}  
+
+\newtheoremstyle{defbreak}
+  {\topsep}   % Space above
+  {\topsep}   % Space below
+  {}          % Body font
+  {}          % Indent amount
+  {\bfseries} % Theorem head font
+  {}         % Punctuation after theorem head
+  {\newline}       % space after head (no \newline!)
+  {}  
+
+\theoremstyle{plainbreak} 
 \numberwithin{equation}{section}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
-\theoremstyle{definition}
+\theoremstyle{defbreak}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{assumption}[theorem]{Assumption}
 \newtheorem{remark}[theorem]{Remark}
