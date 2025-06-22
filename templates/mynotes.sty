@@ -1,9 +1,8 @@
-\documentclass[11pt]{article}  
-
 \usepackage[margin=1in]{geometry} 
 
 \usepackage{amssymb}
 \usepackage{amsthm}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks   = true, 
@@ -15,15 +14,14 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{pifont}
-\graphicspath{{imgs/}}
+
 \usepackage[shortlabels]{enumitem}
-\setlist[enumerate]{topsep=0pt, itemsep=2pt, parsep=0pt}
+\setlist[enumerate]{topsep=0pt, itemsep=1pt, parsep=0pt}
+\setlist[itemize]{topsep=0pt, itemsep=1pt, parsep=0pt}
 \usepackage{float}
 \usepackage{tikz}
-
-
-\setlength\parindent{15pt}
-\setlength\parskip{2pt}
+\setlength\parindent{0pt}
+\setlength\parskip{5pt}
 
 % setting the spacing for displayd math 
 \makeatletter
@@ -34,8 +32,9 @@
   \setlength{\belowdisplayshortskip}{2pt}
 }
 \makeatother
-%  Theorem environments
 
+
+%  Theorem environments
 \newtheoremstyle{plainbreak}
   {\topsep}   % Space above
   {\topsep}   % Space below
@@ -43,7 +42,7 @@
   {}          % Indent amount
   {\bfseries} % Theorem head font
   {}         % Punctuation after theorem head
-  {\newline}       % space after head (no \newline!)
+  {\newline}       % space after head 
   {}  
 
 \newtheoremstyle{defbreak}
@@ -53,9 +52,12 @@
   {}          % Indent amount
   {\bfseries} % Theorem head font
   {}         % Punctuation after theorem head
-  {\newline}       % space after head (no \newline!)
+  {\newline}       % space after head 
   {}  
 
+
+
+% \theoremstyle{plain}
 \theoremstyle{plainbreak} 
 \numberwithin{equation}{section}
 \newtheorem{theorem}{Theorem}[section]
@@ -68,24 +70,13 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{exercise}[theorem]{Exercise}
+
+
+
+
+
 \allowdisplaybreaks
+
 
 % a nice symbol to mark ending to sections 
 \newcommand{\markend}{\hfill \ding{118}} 
-
-\begin{document}
-\title{ Template }
-\author{Chang Feng}
-\date{\today}
-
-\maketitle
-
-
-
-
-
-
-
-
-
-\end{document}
